@@ -5,8 +5,23 @@
 #### Build Setup
 
 ``` bash
+# 安装electron
+cnpm i electron -g
+
+# 安装electron-prebuilt
+cnpm install -g electron-prebuilt
+
 # install dependencies
 npm install
+
+# 安装serialport
+ 
+cnpm install --save serialport
+
+cnpm install --save-dev electron-rebuild 
+
+# rebuild
+./node_modules/.bin/electron-rebuild -v 2.0.18
 
 # serve with hot reload at localhost:9080
 npm run dev
